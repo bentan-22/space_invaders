@@ -7,8 +7,6 @@ The project runs like the classic Space Invaders game with the addition of three
 ### How to Run the Project
 Open the index.html in a browser.
 
-Testing testing testing
-
 ### Technologies Used
 The game was created using HTML, CSS and JavaScript. It runs in canvas in HTML linked to separate CSS and JavaScript files.
 
