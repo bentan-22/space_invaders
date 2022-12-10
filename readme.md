@@ -1,5 +1,5 @@
 ## Space Invaders 
-I created this project as the first of four projects for the course SEIF-SG-12 by General Assembly. I chose to recreate Space Invaders for my first project to pay tribute to the classic game.
+This project was created as the first project for the course SEIF-SG-12 by General Assembly. I chose to recreate Space Invaders for my first project to pay tribute to the classic game.
 
 ### Project Description
 The project runs like the classic Space Invaders game with the addition of three difficulty modes.
@@ -8,7 +8,7 @@ The project runs like the classic Space Invaders game with the addition of three
 Open the index.html in a browser.
 
 ### Technologies Used
-The game is created in a standard HTML boilerplate and runs in a canvas. CSS elements have been added in a linked CSS file to alter the appearance of the starting page (i.e. main menu). The game logic runs separately in a linked JavaScript file.
+The game is created in a standard HTML boilerplate and runs in canvas. CSS elements have been added in a linked CSS file to alter the appearance of the starting page (i.e. main menu). The game logic runs separately in a linked JavaScript file.
 
 The JavaScript uses a variety of techniques covered in Unit 1 of the course SEIF-SG-12, including if conditionals, loops, array methods, callbacks, classes, etc. Although a significant portion of the JavaScript is based on a tutorial, I have added comments throughout the file to explain the code and show my understanding of it.
 
