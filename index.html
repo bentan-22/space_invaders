@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to styles.css -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Space Invaders</title>
+</head>
+<body>
+    <h1 id="spaceinvaders-h1">Space Invaders</h1>
+    <div class="container">
+        <div id="mode-buttons-div" class="button">
+            <button class="button" type="button" id="easy-mode-button">
+                EASY
+            </button>
+            <button class="button" type="button" id="medium-mode-button">
+                MEDIUM
+            </button>
+            <button class="button" type="button" id="hard-mode-button">
+                HARD
+            </button>
+        </div>
+        <div id="main-menu" class="button">
+            <button class="button" type="button" id="main-menu-button">
+                MAIN MENU
+            </button>
+        </div>
+        <div id="scoreboard"></div>
+        <div id="instructions-div">
+            <p> HOW TO PLAY: <br> <br>
+            <kbd>&#8592;</kbd> : MOVE LEFT <br> <br>
+            <kbd>&#8594;</kbd> : MOVE RIGHT <br> <br>
+            <kbd>spacebar</kbd> : SHOOT
+            </p>
+        </div>
+    </div>
+    <!-- game canvas -->
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <!-- link to script.js -->
+    <script src="script.js" charset="utf-8"></script>
+</body>
+<footer>
+    <!-- Credits to Nicolai B. Andersen https://betterprogramming.pub/create-the-classic-space-invaders-game-af087786d63b -->
+</footer>
+</html>

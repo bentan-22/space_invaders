@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@font-face {
+    font-family: 'Press Start 2p';
+  }
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Space Mono', serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#mode-buttons-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    font-size: large;
+    margin: 5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#easy-mode-button {
+    color: green;
+    background-color: lightgreen;
+    box-shadow: 0 .2em green;
+}
+
+#medium-mode-button {
+    color: rgba(255, 255, 0, 0.676);
+    background-color: rgba(246, 255, 0, 0.534);
+    box-shadow: 0 .2em rgba(255, 255, 0, 0.676);
+}
+
+#hard-mode-button {
+    color: red;
+    background-color: pink;
+    box-shadow: 0 .2em red;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center;
+}
+
+#main-menu-button {
+    color: gray;
+    background-color: lightgray;
+    box-shadow: 0 .2em gray;
+}
+
+#scoreboard {
+    font-family: 'Space Mono', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#instructions-div {
+    font-family: 'Space Mono', serif;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    border: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+kbd {
+    border: 2px solid #FFFFFF;
+    font-size: .85em; 
+    line-height: .85em; 
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: .05em; 
+    padding: 3px 5px;
+    white-space: nowrap;
+  }
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 800px;
+}
