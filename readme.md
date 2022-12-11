@@ -11,8 +11,7 @@ Open the index.html in a browser.
 The game was created using HTML, CSS and JavaScript. It runs in canvas in HTML linked to separate CSS and JavaScript files.
 
 ### Bugs / Fixes
-1) alert button sometimes does not go away when 'ok' is pressed
-2) Speed can vary depending on browser
+1) Depending on the browser, the alert that shows up when the game ends sometimes does not go away after 'ok' is pressed
 
 ### Possible Extensions
 1) Customizable appearances for the player and aliens
