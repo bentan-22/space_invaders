@@ -2,7 +2,7 @@ const game = {};
 game.canvas = document.getElementById('canvas');
 game.ctx = game.canvas.getContext('2d');
 game.backgroundColor = '#000000';
-/* default 16 */ game.speed = 16;
+/* default is 16; runs smoothly in Safari */ game.speed = 16;
 
 // Asteroid settings
 game.asteroidColor = '#808080';
@@ -96,7 +96,7 @@ game.update = () => {
     }
 
     if (game.alienDirection == 1) {
-        // find Alien closest to right side of screen
+        // find the Alien closest to the right side of screen
         let closestToRightSideAlien = game.aliens[0];
         for (let i = 1; i < game.aliens.length; i++) {
     // if Alien's x-axis position is more than rightmost Alien's position
@@ -116,7 +116,7 @@ game.update = () => {
             }
         }
     } else if (game.alienDirection == -1) {
-        // find Alien closest to left side of screen
+        // find the Alien closest to the left side of screen
         let closestToLeftSideAlien = game.aliens[0];
         for (let i = 0; i < game.aliens.length; i++) {
             if (game.aliens[i].x < closestToLeftSideAlien.x) {
@@ -141,7 +141,7 @@ game.update = () => {
         game.aliens[Math.floor(Math.random() * game.aliens.length)].shoot(5);
     }
 
-// check whether Player bullet collides with Asteroid
+// when Player's bullet hits Asteroid
     for (let i = 0; i < game.player.bullets.length; i++) {
         for (let j = 0; j < game.asteroids.length; j++) {
             if (game.asteroids[j].collideWith(game.player.bullets[i])) {
@@ -152,7 +152,7 @@ game.update = () => {
         }
     }
 
-// check whether Alien bullet collide with Asteroid
+//  when Alien's bullet hits Asteroid
     for (let i = 0; i < game.aliens.length; i++) {
         for (let j = 0; j < game.aliens[i].bullets.length; j++) {
             for (let k = 0; k < game.asteroids.length; k++) {
@@ -165,7 +165,7 @@ game.update = () => {
         }
     }
 
-// check whether Player bullet collide with Alien
+// when Player's bullet hits Alien
     for (let i = 0; i < game.player.bullets.length; i++) {
         for (let j = 0; j < game.aliens.length; j++) {
             if (game.aliens[j].collideWith(game.player.bullets[i])) {
@@ -177,7 +177,7 @@ game.update = () => {
         }
     }
 
-// check whether Alien bullet collide with Player
+// when Alien's bullet hits Player
     for (let i = 0; i < game.aliens.length; i++) {
         for (let j = 0; j < game.aliens[i].bullets.length; j++) {
             if (game.player.collideWith(game.aliens[i].bullets[j])) {
@@ -187,7 +187,7 @@ game.update = () => {
         }
     }
 
-// check whether Alien has reached Asteroids
+// when Alien reaches Asteroid's position
     for (let i = 0; i < game.aliens.length; i++) {
         if (game.aliens[i].y + game.aliens[i].height > game.asteroidYPosition) {
         // alert
@@ -199,12 +199,12 @@ game.update = () => {
 }
 
 game.keydown = (event) => {
-    if (event.keyCode === 37) {
+    if (event.keyCode === /* left arrow key */ 37) {
         game.player.update(-5, 0);
-    } else if (event.keyCode === 39) {
+    } else if (event.keyCode === /* right arrow key */ 39) {
         game.player.update(5, 0);
-    } else if (event.keyCode === 32) {
-    // the preventDefault() prevents the start button from being pressed when the spacebar is pressed
+    } else if (event.keyCode === /* spacebar */ 32) {
+    // preventDefault() prevents the main menu button from being pressed when the spacebar is pressed
         event.preventDefault();
         game.player.shoot(-5);
     }
